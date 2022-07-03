@@ -2,11 +2,11 @@
     <string name="app_name">Bumblebee</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="version_fragment_label">Version</string>
+    <string name="about_fragment_label">About</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="mock_version">0.0.1</string>
+    <string name="about_text">Reason to publish of this raw version is Extreme programming, when project shall be ready to release any day </string>
 </resources>
