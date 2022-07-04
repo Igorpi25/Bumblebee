@@ -3,26 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/VersionFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.igorpi25.bumblebee.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/VersionFragment"
+        android:name="com.igorpi25.bumblebee.VersionFragment"
+        android:label="@string/version_fragment_label"
+        tools:layout="@layout/fragment_version">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_VersionFragment_to_AboutFragment"
+            app:destination="@id/AboutFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.igorpi25.bumblebee.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+        android:id="@+id/AboutFragment"
+        android:name="com.igorpi25.bumblebee.AboutFragment"
+        android:label="@string/about_fragment_label"
+        tools:layout="@layout/fragment_about"/>
 </navigation>
