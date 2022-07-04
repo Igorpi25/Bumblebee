@@ -19,10 +19,5 @@
         android:id="@+id/AboutFragment"
         android:name="com.igorpi25.bumblebee.AboutFragment"
         android:label="@string/about_fragment_label"
-        tools:layout="@layout/fragment_about">
-
-        <action
-            android:id="@+id/action_AboutFragment_to_VersionFragment"
-            app:destination="@id/VersionFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_about"/>
 </navigation>

@@ -32,9 +32,6 @@ class AboutFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_AboutFragment_to_VersionFragment)
-        }
     }
 
     override fun onDestroyView() {

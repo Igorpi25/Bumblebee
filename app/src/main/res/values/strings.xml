@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">Bumblebee</string>
+    <!-- Menu -->
     <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
     <!-- Strings used for fragments for navigation -->
     <string name="version_fragment_label">Version</string>
     <string name="about_fragment_label">About</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
+    <!-- VersionFragment -->
     <string name="mock_version">0.0.1</string>
+    <!-- AboutFragment -->
     <string name="about_text">Reason to publish of this raw version is Extreme programming, when project shall be ready to release any day </string>
 </resources>
