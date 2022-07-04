@@ -1,19 +1,9 @@
 package com.igorpi25.bumblebee
 
-import android.widget.Button
-import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.action.ViewActions.click
-import androidx.test.espresso.assertion.ViewAssertions.doesNotExist
-import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
-import org.hamcrest.CoreMatchers.`is`
-import org.hamcrest.CoreMatchers.instanceOf
-import org.hamcrest.Matchers.allOf;
-import org.hamcrest.Matchers.equalTo
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -32,28 +22,6 @@ class ExampleInstrumentedTest {
 
     @get:Rule
     val activityRule = ActivityScenarioRule(MainActivity::class.java)
-
-    @Test
-    fun moveFromFirstFragmentToSecond(){
-        onView(withId(R.id.button_first))
-            .perform(click())
-
-        onView(withId(R.id.button_second))
-            .check(matches(isDisplayed()))
-    }
-
-    @Test
-    fun showSnackBar(){
-        onView(withId(com.google.android.material.R.id.snackbar_text))
-            .check(doesNotExist())
-
-        onView(withId(R.id.fab))
-            .perform(click())
-
-        onView(withId(com.google.android.material.R.id.snackbar_text))
-            .check(matches(isDisplayed()))
-            .check(matches(withText("Replace with your own action")))
-    }
 
     @Test
     fun useAppContext() {
