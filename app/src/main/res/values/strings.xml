@@ -7,7 +7,8 @@
     <string name="version_fragment_label">Version</string>
     <string name="about_fragment_label">About</string>
     <!-- VersionFragment -->
-    <string name="mock_version">0.0.1</string>
+    <string name="version_title">Bumblebee</string>
+    <string name="version_value">0.0.1</string>
     <!-- AboutFragment -->
     <string name="about_text">Reason to publish of this raw version is Extreme programming, when project shall be ready to release any day </string>
 </resources>

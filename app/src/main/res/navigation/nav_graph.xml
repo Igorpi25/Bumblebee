@@ -8,9 +8,7 @@
     <fragment
         android:id="@+id/VersionFragment"
         android:name="com.igorpi25.bumblebee.VersionFragment"
-        android:label="@string/version_fragment_label"
         tools:layout="@layout/fragment_version">
-
         <action
             android:id="@+id/action_VersionFragment_to_AboutFragment"
             app:destination="@id/AboutFragment" />
