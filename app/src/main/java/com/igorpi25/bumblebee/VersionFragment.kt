@@ -1,5 +1,6 @@
 package com.igorpi25.bumblebee
 
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -24,6 +25,11 @@ class VersionFragment : Fragment() {
     ): View {
         _binding = FragmentVersionBinding.inflate(inflater, container, false)
         setHasOptionsMenu(true)
+        activity?.let {
+            val manager = it.packageManager
+            val info = manager.getPackageInfo(it.packageName, PackageManager.GET_ACTIVITIES)
+            binding.textviewVersion.text = info.versionName
+        }
         return binding.root
     }
 
