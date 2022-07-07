@@ -28,7 +28,7 @@ class VersionFragment : Fragment() {
         activity?.let {
             val manager = it.packageManager
             val info = manager.getPackageInfo(it.packageName, PackageManager.GET_ACTIVITIES)
-            binding.textviewVersion.text = info.versionName
+            binding.textviewVersion.text = info.versionName + " (${info.versionCode})"
         }
         return binding.root
     }
